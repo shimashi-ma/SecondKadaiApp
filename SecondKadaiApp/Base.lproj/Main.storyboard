@@ -76,6 +76,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Neb-ND-cvt"/>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="kjH-Io-Aga" id="MHg-ub-5b2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="he4-KA-ROv" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Kcr-Wk-f1E" userLabel="Exit" sceneMemberID="exit"/>

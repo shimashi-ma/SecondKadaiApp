@@ -10,10 +10,18 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    //2画面目のLabelを、IBOutletとして接続
+    @IBOutlet weak var label: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        
+        
+    
     }
     
 
