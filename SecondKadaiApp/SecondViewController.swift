@@ -20,6 +20,8 @@ class SecondViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         
+        label.text = "こんにちは、\(name)さん"
+        
         
     
     }
