@@ -20,8 +20,12 @@ class ViewController: UIViewController {
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        
+        let secondViewController: SecondViewController = segue.destination as! SecondViewController
+        
+        secondViewController.name = usertext.text
+        
 
-    }
     
     @IBAction func unwind(_ segue: UIStoryboardSegue){
         
