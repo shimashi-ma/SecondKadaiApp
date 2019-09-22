@@ -21,16 +21,13 @@ class ViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         
+        //segueから遷移先のSecondViewControllerを取得する
         let secondViewController: SecondViewController = segue.destination as! SecondViewController
         
+        //遷移先のnameプロパティにusertextで取得した値を渡す
         secondViewController.name = usertext.text!
         
-
-    
-    @IBAction func unwind(_ segue: UIStoryboardSegue){
-        
     }
-
-
-}
+    @IBAction func unwind(_ segue: UIStoryboardSegue){
+    }
 }

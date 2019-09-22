@@ -13,6 +13,7 @@ class SecondViewController: UIViewController {
     //2画面目のLabelを、IBOutletとして接続
     @IBOutlet weak var label: UILabel!
     
+    //String型の変数nameに初期値を設定
     var name: String = "なまえ"
     
     
@@ -21,7 +22,7 @@ class SecondViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        
+        //labelのtextプロパティに表示文章を代入。
         label.text = "こんにちは、\(name)さん"
         
         
