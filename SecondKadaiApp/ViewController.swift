@@ -23,7 +23,7 @@ class ViewController: UIViewController {
         
         let secondViewController: SecondViewController = segue.destination as! SecondViewController
         
-        secondViewController.name = usertext.text
+        secondViewController.name = usertext.text!
         
 
     
@@ -33,4 +33,4 @@ class ViewController: UIViewController {
 
 
 }
-
+}
