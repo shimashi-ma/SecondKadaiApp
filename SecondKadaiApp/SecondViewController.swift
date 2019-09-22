@@ -13,7 +13,7 @@ class SecondViewController: UIViewController {
     //2画面目のLabelを、IBOutletとして接続
     @IBOutlet weak var label: UILabel!
     
-    var name: String 
+    var name: String = "なまえ"
     
     
     override func viewDidLoad() {
