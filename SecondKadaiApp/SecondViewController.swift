@@ -24,12 +24,9 @@ class SecondViewController: UIViewController {
         
         //labelのtextプロパティに表示文章を代入。
         label.text = "こんにちは、\(name)さん"
-        
-        
     
     }
     
-
     /*
     // MARK: - Navigation
 
