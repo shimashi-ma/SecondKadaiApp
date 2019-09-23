@@ -18,22 +18,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="名前を入力してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MhB-V1-Vvz">
-                                <rect key="frame" x="92" y="210" width="191" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前を入力してください" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MhB-V1-Vvz">
+                                <rect key="frame" x="50" y="296.66666666666669" width="275" height="19"/>
+                                <fontDescription key="fontDescription" name=".HiraKakuInterface-W3" family=".Hiragino Kaku Gothic Interface" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KpS-sX-eui">
-                                <rect key="frame" x="164.66666666666666" y="524" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KpS-sX-eui">
+                                <rect key="frame" x="164.66666666666666" y="421" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="unwind:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UFL-IS-KYD"/>
                                     <segue destination="loh-2l-bie" kind="show" id="pUt-rA-drg"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZcB-P9-2MW">
-                                <rect key="frame" x="82" y="265" width="211" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZcB-P9-2MW">
+                                <rect key="frame" x="87.666666666666686" y="341" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="dgM-0I-18W"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -41,9 +44,14 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ZcB-P9-2MW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IrO-86-SjI"/>
-                            <constraint firstItem="KpS-sX-eui" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PGg-nP-xGu"/>
-                            <constraint firstItem="MhB-V1-Vvz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vO0-hh-r1g"/>
+                            <constraint firstItem="KpS-sX-eui" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="30" id="0OY-nh-7Vd"/>
+                            <constraint firstItem="MhB-V1-Vvz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="9AY-bw-ffp"/>
+                            <constraint firstItem="MhB-V1-Vvz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="BCg-lZ-OQM"/>
+                            <constraint firstItem="KpS-sX-eui" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BXT-A5-6sD"/>
+                            <constraint firstItem="ZcB-P9-2MW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="CyF-2F-JeA"/>
+                            <constraint firstItem="MhB-V1-Vvz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Doz-8X-nSE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MhB-V1-Vvz" secondAttribute="trailing" constant="50" id="rzY-KA-dI9"/>
+                            <constraint firstItem="ZcB-P9-2MW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xkU-kZ-A5S"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -63,24 +71,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lqj-65-UHL">
-                                <rect key="frame" x="172" y="504" width="31" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lqj-65-UHL">
+                                <rect key="frame" x="172" y="421" width="31" height="30"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
                                     <segue destination="Kcr-Wk-f1E" kind="unwind" unwindAction="unwind:" id="kLg-8o-xgb"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kjH-Io-Aga">
-                                <rect key="frame" x="91" y="231" width="192" height="29"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kjH-Io-Aga">
+                                <rect key="frame" x="87.666666666666686" y="344" width="200" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="5Hv-rL-bQl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Lqj-65-UHL" firstAttribute="centerX" secondItem="hDK-0N-VjO" secondAttribute="centerX" id="9pU-1d-VoX"/>
-                            <constraint firstItem="kjH-Io-Aga" firstAttribute="centerX" secondItem="hDK-0N-VjO" secondAttribute="centerX" id="Pfp-FF-Fq7"/>
+                            <constraint firstItem="kjH-Io-Aga" firstAttribute="centerY" secondItem="hDK-0N-VjO" secondAttribute="centerY" constant="-50" id="0e8-Ki-AFK"/>
+                            <constraint firstItem="Lqj-65-UHL" firstAttribute="centerX" secondItem="hDK-0N-VjO" secondAttribute="centerX" id="DEj-qO-mZK"/>
+                            <constraint firstItem="kjH-Io-Aga" firstAttribute="centerX" secondItem="hDK-0N-VjO" secondAttribute="centerX" id="Ula-jl-Ktp"/>
+                            <constraint firstItem="Lqj-65-UHL" firstAttribute="centerY" secondItem="hDK-0N-VjO" secondAttribute="centerY" constant="30" id="cb8-SL-jE0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Neb-ND-cvt"/>
                     </view>
