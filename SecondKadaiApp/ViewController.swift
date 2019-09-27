@@ -16,6 +16,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        
+        //背景のイメージ
+        let image = UIImage(named: "snow-a3")
+        //ルートビューの背景をパターンイメージにする
+        self.view.backgroundColor = UIColor(patternImage: image!)
+        
+        
+        
     }
     
     

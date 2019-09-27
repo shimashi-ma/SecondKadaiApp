@@ -18,9 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="snow-a3" translatesAutoresizingMaskIntoConstraints="NO" id="wOW-JW-GgI">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前を入力してください" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MhB-V1-Vvz">
                                 <rect key="frame" x="50" y="174.5" width="220" height="19"/>
                                 <fontDescription key="fontDescription" name=".HiraKakuInterface-W3" family=".Hiragino Kaku Gothic Interface" pointSize="20"/>
@@ -53,10 +50,6 @@
                             <constraint firstItem="KpS-sX-eui" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BXT-A5-6sD"/>
                             <constraint firstItem="ZcB-P9-2MW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="CyF-2F-JeA"/>
                             <constraint firstItem="MhB-V1-Vvz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Doz-8X-nSE"/>
-                            <constraint firstItem="wOW-JW-GgI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="LeW-YC-ndr"/>
-                            <constraint firstAttribute="bottom" secondItem="wOW-JW-GgI" secondAttribute="bottom" id="Vxn-7r-ppw"/>
-                            <constraint firstItem="wOW-JW-GgI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YWg-Wv-xMV"/>
-                            <constraint firstItem="wOW-JW-GgI" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="f9n-Sb-UKK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MhB-V1-Vvz" secondAttribute="trailing" constant="50" id="rzY-KA-dI9"/>
                             <constraint firstItem="ZcB-P9-2MW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xkU-kZ-A5S"/>
                         </constraints>
@@ -78,9 +71,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="snow-a3" translatesAutoresizingMaskIntoConstraints="NO" id="qwe-AW-JDb">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lqj-65-UHL">
                                 <rect key="frame" x="144.5" y="299" width="31" height="30"/>
                                 <state key="normal" title="戻る"/>
@@ -89,7 +79,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kjH-Io-Aga">
-                                <rect key="frame" x="60" y="222" width="200" height="24"/>
+                                <rect key="frame" x="60" y="130" width="200" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="5Hv-rL-bQl"/>
                                 </constraints>
@@ -100,14 +90,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="kjH-Io-Aga" firstAttribute="centerY" secondItem="hDK-0N-VjO" secondAttribute="centerY" constant="-50" id="0e8-Ki-AFK"/>
+                            <constraint firstItem="kjH-Io-Aga" firstAttribute="centerY" secondItem="hDK-0N-VjO" secondAttribute="centerY" multiplier="0.5" id="0e8-Ki-AFK"/>
                             <constraint firstItem="Lqj-65-UHL" firstAttribute="centerX" secondItem="hDK-0N-VjO" secondAttribute="centerX" id="DEj-qO-mZK"/>
-                            <constraint firstItem="qwe-AW-JDb" firstAttribute="leading" secondItem="Neb-ND-cvt" secondAttribute="leading" id="FE9-DL-GmT"/>
-                            <constraint firstAttribute="bottom" secondItem="qwe-AW-JDb" secondAttribute="bottom" id="OEZ-Vg-X8F"/>
                             <constraint firstItem="kjH-Io-Aga" firstAttribute="centerX" secondItem="hDK-0N-VjO" secondAttribute="centerX" id="Ula-jl-Ktp"/>
-                            <constraint firstItem="qwe-AW-JDb" firstAttribute="top" secondItem="hDK-0N-VjO" secondAttribute="top" id="b0u-PH-6HQ"/>
                             <constraint firstItem="Lqj-65-UHL" firstAttribute="centerY" secondItem="hDK-0N-VjO" secondAttribute="centerY" constant="30" id="cb8-SL-jE0"/>
-                            <constraint firstItem="qwe-AW-JDb" firstAttribute="trailing" secondItem="Neb-ND-cvt" secondAttribute="trailing" id="eWi-Dw-80d"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Neb-ND-cvt"/>
                     </view>
@@ -121,7 +107,4 @@
             <point key="canvasLocation" x="1400.625" y="34.859154929577464"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="snow-a3" width="100" height="92"/>
-    </resources>
 </document>

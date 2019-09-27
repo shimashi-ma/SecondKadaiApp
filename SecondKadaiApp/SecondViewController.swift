@@ -22,8 +22,23 @@ class SecondViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        //labelのtextプロパティに表示文章を代入。
-        label.text = "こんにちは、\(name)さん"
+        
+        //背景のイメージ
+        let image = UIImage(named: "snow-a3")
+        //ルートビューの背景をパターンイメージにする
+        self.view.backgroundColor = UIColor(patternImage: image!)
+        
+        
+        //ユーザーが未入力だった場合
+        if name == "" {
+            label.text = "こんにちは、ななしさん"
+            
+        //ユーザーが名前を入力したな場合
+        } else {
+            label.text = "こんにちは\(name)さん"
+        }
+        
+        
     
     }
     
